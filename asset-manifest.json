@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/log-app/static/css/main.cfdcab03.css",
-    "main.js": "/log-app/static/js/main.073b3079.js",
+    "main.js": "/log-app/static/js/main.5f3a35b7.js",
     "static/media/img.jpg": "/log-app/static/media/img.34dd2d830ad1b0f08d68.jpg",
     "index.html": "/log-app/index.html",
     "main.cfdcab03.css.map": "/log-app/static/css/main.cfdcab03.css.map",
-    "main.073b3079.js.map": "/log-app/static/js/main.073b3079.js.map"
+    "main.5f3a35b7.js.map": "/log-app/static/js/main.5f3a35b7.js.map"
   },
   "entrypoints": [
     "static/css/main.cfdcab03.css",
-    "static/js/main.073b3079.js"
+    "static/js/main.5f3a35b7.js"
   ]
 }
