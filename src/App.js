@@ -36,7 +36,7 @@ function App() {
 
         <div className="auth-wrapper">
           <div className="auth-inner">
-            <Routes>
+            <Routes basename={'/log-app'}>
               <Route exact path="/" element={<Login />} />
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
