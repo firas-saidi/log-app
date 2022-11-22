@@ -19,13 +19,11 @@ export default class SignUp extends Component {
   
       const { fname, lname, email, password } = this.state;
       console.log(fname, lname, email, password);
-      fetch("http://localhost:5000/register", {
-        method: "POST",
-        crossDomain: true,
+      
+      fetch("https://my-log-backend.herokuapp.com/register", {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          "Access-Control-Allow-Origin": "*",
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           fname,
@@ -85,7 +83,7 @@ export default class SignUp extends Component {
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary" >
+          <button type="button" className="btn btn-primary" >
             Sign Up
           </button>
         </div>

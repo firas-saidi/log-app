@@ -8,13 +8,10 @@ export default class UserDetails extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:5000/userData", {
-      method: "POST",
-      crossDomain: true,
+    fetch("https://my-log-backend.herokuapp.com/userData", {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        "Access-Control-Allow-Origin": "*",
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         token: window.localStorage.getItem("token"),
