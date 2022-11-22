@@ -90,7 +90,7 @@ export default class SignUp extends Component {
           </button>
         </div>
         <p className="forgot-password text-right">
-          Already registered <Link to={"/sign-in"}>sign in?</Link>
+          Already registered <Link to={"/"}>sign in?</Link>
         </p>
       </form>
     )
