@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Login extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ export default class Login extends Component {
     e.preventDefault();
     const { email, password } = this.state;
     console.log(email, password);
-    fetch("https://my-log-backend.herokuapp.com/login-user", {
+    fetch("http://localhost:5000/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -79,7 +80,9 @@ export default class Login extends Component {
             Submit
           </button>
         </div>
-      
+        <p className="forgot-password text-right">
+          <Link to={"/sign-up"}>Sign Up</Link>
+        </p>
       </form>
     );
   }
